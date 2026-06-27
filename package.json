@@ -1,0 +1,22 @@
+{
+  "name": "student-resource-portal",
+  "version": "1.0.0",
+  "description": "A beginner-friendly full-stack Student Resource Portal built with HTML, CSS, JavaScript, Node.js, and Express.js.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "student",
+    "resources",
+    "express",
+    "node",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.22.2"
+  },
+  "type": "commonjs"
+}

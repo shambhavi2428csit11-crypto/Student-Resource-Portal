@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Resource Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="brand">
+        <div class="brand-mark">SR</div>
+        <div>
+          <h1>Student Resource Portal</h1>
+          <p>All your study links in one place</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#resources">Resources</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <span class="badge">Beginner-friendly full stack project</span>
+          <h2>Find notes, coding links, cloud resources, and placement prep together.</h2>
+          <p>
+            A clean student portal built with HTML, CSS, JavaScript, Node.js, and Express.js.
+            Search by title, filter by category, and open helpful resources quickly.
+          </p>
+
+          <div class="search-panel">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search by title or category..."
+              aria-label="Search resources"
+            />
+            <button id="clearSearch" type="button">Clear</button>
+          </div>
+
+          <div class="category-filters" id="categoryFilters">
+            <button class="filter-btn active" data-category="All">All</button>
+            <button class="filter-btn" data-category="Subjects">Subjects</button>
+            <button class="filter-btn" data-category="Coding">Coding</button>
+            <button class="filter-btn" data-category="Cloud">Cloud</button>
+            <button class="filter-btn" data-category="Placement Preparation">Placement Preparation</button>
+            <button class="filter-btn" data-category="Important Academic Links">Academic Links</button>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h3>Quick Highlights</h3>
+          <ul>
+            <li>Simple Express backend</li>
+            <li>Fetch API from frontend</li>
+            <li>Responsive card layout</li>
+            <li>Easy to understand code</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="resources-section" id="resources">
+        <div class="section-heading">
+          <h3>Resource Library</h3>
+          <p>Browse curated learning links for everyday student use.</p>
+        </div>
+
+        <div id="resourceCount" class="resource-count">Loading resources...</div>
+        <div id="resourceGrid" class="resource-grid"></div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-card">
+          <h3>How it works</h3>
+          <p>
+            The backend exposes a simple API at <code>/api/resources</code>. The frontend uses
+            JavaScript fetch to load that data, then shows cards, search results, and category
+            filters without needing a database.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
